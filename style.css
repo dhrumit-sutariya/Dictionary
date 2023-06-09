@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(226, 178, 178);
+}
+
+.heading {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-bottom: 40px;
+}
+
+.main {
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 20px;
+    box-shadow: 0 20 40px rgba(38, 33, 61, 0, 2);
+    background-color: beige;
+    border-radius: 10px;
+}
+
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid rgb(67, 0, 250);
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background: rgb(67, 0, 250);
+    color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.search-box button:hover {
+    background: rgb(110, 53, 254);
+    cursor: pointer;
+}
+
+.result-box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.word button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    color: steelblue;
+}
+
+.meaning {
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.error {
+    color: red;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 40px;
+}
