@@ -37,7 +37,10 @@ const getdata = async () => {
                     </div>
                 </div>
             `;
-            Sound.setAttribute("src", data[0].phonetics[0].audio);
+
+
+            Sound.setAttribute("src", data[0].phonetics[1].audio || data[0].phonetics[0].audio);
+
         })
         .catch((error) => {
             console.log(error);
