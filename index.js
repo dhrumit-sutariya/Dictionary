@@ -23,11 +23,12 @@ const getdata = async () => {
             return response.json();
         })
         .then((data) => {
+            console.log(data);
             Result.innerHTML =
                 `
                 <div class="result-box" id="result-box">
                     <div class="word">
-                        <h3>${finalword}</h3>
+                        <h3 class="finalword">${finalword}</h3>
                         <button id="play" onclick="playSound()">
                             <i class="fa-solid fa-volume-high"></i>
                         </button>
@@ -38,8 +39,8 @@ const getdata = async () => {
                 </div>
             `;
 
-
-            Sound.setAttribute("src", data[0].phonetics[1].audio || data[0].phonetics[0].audio);
+            // console.log(data[0].phonetics[1].audio || data[0].phonetics[0].audio || data[1].phonetics[0].audio || data[2].phonetics[0].audio);
+            Sound.setAttribute("src", data[0].phonetics[1].audio || data[0].phonetics[0].audio || data[1].phonetics[0].audio || data[2].phonetics[0].audio);
 
         })
         .catch((error) => {

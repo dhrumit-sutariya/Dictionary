@@ -6,14 +6,14 @@
 }
 
 body {
-    background-color: rgb(226, 178, 178);
+    background-color: #caf0f8;
 }
 
 .heading {
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: #03045e;
     margin-bottom: 40px;
 }
 
@@ -25,7 +25,7 @@ body {
     left: 50%;
     padding: 80px 20px;
     box-shadow: 0 20 40px rgba(38, 33, 61, 0, 2);
-    background-color: beige;
+    background-color: #90e0ef;
     border-radius: 10px;
 }
 
@@ -41,16 +41,16 @@ body {
     border: none;
     outline: none;
     background: transparent;
-    border-bottom: 3px solid rgb(67, 0, 250);
+    border-bottom: 3px solid #03045e;
     font-size: 18px;
     font-weight: 500;
-    color: rgb(0, 0, 0);
+    color: #03045e;
 }
 
 .search-box button {
     padding: 15px 0;
     width: 25%;
-    background: rgb(67, 0, 250);
+    background: #03045e;
     color: aliceblue;
     border: none;
     outline: none;
@@ -60,7 +60,7 @@ body {
 }
 
 .search-box button:hover {
-    background: rgb(110, 53, 254);
+    background: #00337C;
     cursor: pointer;
 }
 
@@ -77,13 +77,21 @@ body {
     outline: none;
     background: transparent;
     font-size: 18px;
-    color: steelblue;
+    color: #1a237e;
+}
+
+.finalword {
+    font-size: 18px;
+    color: #1a237e;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .meaning {
     margin-top: 10px;
     font-size: 18px;
-    color: rgb(0, 0, 0);
+    color: #3f51b5;
 }
 
 .error {
